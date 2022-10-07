@@ -217,6 +217,10 @@ nav ul {
    margin-bottom: 52px;
 }
 
+.clients--content img {
+   width: 100;
+}
+
 /* =========== products =========== */
 
 .content-products {
