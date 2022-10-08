@@ -8,6 +8,7 @@
 
 :root {
    --bg: #2d2d2d;
+   --bg-red: #fa002d;
    --primary-color: #fa002d;
 
    --text-color-1: #ffffff;
@@ -255,4 +256,126 @@ nav ul {
    line-height: 160%;
 
    color: var(--text-color-1);
+}
+
+/* =========== opportunite =========== */
+
+#opportunite {
+   background-color: var(--bg-red);
+   overflow: hidden;
+}
+
+#opportunite .opportunite---bg-img {
+   background-image: url('./assets/23943\ 1.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.slide {
+   display: flex;
+   gap: 20px;
+
+   padding: 56px 0;
+}
+
+.slide-area,
+.vacancies {
+   min-width: 339px;
+   height: 367px;
+}
+
+.vacancies {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: var(--text-color-1);
+}
+
+.vacancies h3 {
+   font-family: 'Palanquin';
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 87px;
+}
+
+.vacancies span {
+   font-family: 'Palanquin';
+
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 100%;
+}
+
+.slide-area {
+   background: linear-gradient(198.18deg, #1f1f1f 9.55%, #000000 125.88%);
+   box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+
+   color: var(--text-color-1);
+
+   padding: 22px;
+}
+
+.slide-area h4 {
+   font-family: 'Palanquin';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 100%;
+}
+
+.slide-area .tecs {
+   font-family: 'Arimo';
+   font-size: 14px;
+   line-height: 16px;
+
+   margin: 40px 0;
+}
+
+.slide-area .tecs span {
+   padding: 12px 15px;
+   border: 1px solid var(--primary-color);
+   border-radius: 7px;
+}
+
+.slide-area .info {
+   display: flex;
+   flex-direction: column;
+
+   margin-bottom: 60px;
+
+   gap: 30px;
+}
+
+.slide-area .localization,
+.slide-area .job {
+   display: flex;
+   align-items: center;
+
+   font-family: 'Arimo';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+}
+
+.slide-area .info svg {
+   margin-right: 16px;
+}
+
+.slide-area .details {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.slide-area .details a {
+   font-family: 'Palanquin';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+
+   color: var(--text-color-1);
+   text-decoration: none;
+   margin-right: 20px;
 }
