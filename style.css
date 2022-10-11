@@ -72,9 +72,12 @@ header .container img {
 
 nav ul {
    display: flex;
-   list-style: none;
 
-   gap: 85px;
+   list-style: none;
+}
+
+nav ul li {
+   padding: 0 20px;
 }
 
 .menu nav a {
@@ -462,7 +465,7 @@ nav ul {
 
 .content-message {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    gap: 48px;
 
    margin-top: 67px;
@@ -547,7 +550,7 @@ input[type='submit']:hover {
    flex: 1;
 }
 .maps img {
-   width: 604px;
+   width: 500px;
    height: 454px;
 }
 
@@ -593,4 +596,101 @@ footer {
    line-height: 100%;
 
    color: var(--text-color-1);
+}
+/* ======= MEDIA ========== */
+
+@media (min-width: 1040px) {
+   .container {
+      padding: 0 20px;
+   }
+
+   .clients--content img {
+      width: 930px;
+   }
+
+   .maps img {
+      width: 470px;
+      height: 450px;
+   }
+}
+
+@media (max-width: 1039px) and (min-width: 700px) {
+   .container {
+      padding: 0 20px;
+   }
+   .clients--content img {
+      width: 700px;
+   }
+
+   .content-message {
+      flex-direction: column;
+   }
+
+   .content--banner h1 {
+      font-size: 40px;
+   }
+
+   .content--banner span {
+      font-size: 16px;
+   }
+
+   .content--banner .button a {
+      font-size: 14px;
+      padding: 16px 40px;
+   }
+
+   #services .container {
+      gap: 0;
+   }
+
+   .services--content {
+      margin-right: 3px;
+   }
+
+   .services--content:nth-child(3) {
+      margin-right: 0;
+   }
+
+   .services--content p {
+      font-size: 14px;
+   }
+
+   .services--content span {
+      font-size: 40px;
+   }
+
+   .content-products {
+      margin-bottom: 50px;
+   }
+
+   .content-products .content-producs-text h3 {
+      font-size: 33px;
+   }
+
+   .content-products .content-producs-text p {
+      font-size: 16px;
+   }
+
+   .vacancies h3 {
+      font-size: 42px;
+      line-height: 80px;
+   }
+
+   .vacancies span {
+      font-size: 18px;
+   }
+
+   input[type='submit'] {
+      display: block;
+      width: 100%;
+   }
+
+   .cards {
+      gap: 50px;
+   }
+
+   .maps img {
+      width: 100%;
+      height: auto;
+   }
 }
