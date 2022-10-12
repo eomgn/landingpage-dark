@@ -17,10 +17,23 @@
             </div>
             <div class="menu">
                <nav>
+                  <!-- o menu-faketrigger é para abrir o menuhamburger com a técnica do input checkbox porem so funciona caso tenha itens (tags) no mesmo nível 
+
+                  tem que colocar o opacity:0 pois se colocar display:none não irá funcionar pois com display:none o input não será exibido assim não funcionando  -->
+
+                  <input type="checkbox" class="menu-faketrigger" />
+                  <div class="menu-lines">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+
                   <ul>
-                     <li><a href="">serviços</a></li>
-                     <li><a href="">vagas</a></li>
-                     <li><a href="">contato</a></li>
+                     <li><a href="#banner">início</a></li>
+                     <li><a href="#services">serviços</a></li>
+                     <li><a href="#clients">serviços</a></li>
+                     <li><a href="#opportunite">vagas</a></li>
+                     <li><a href="#message">contato</a></li>
                   </ul>
                </nav>
             </div>
@@ -45,7 +58,7 @@
                   <div class="img--banner">
                      <picture>
                         <source
-                           media="(max-width: 1024px) and (min-width:425px)"
+                           media="(max-width: 1039px) and (min-width:425px)"
                            srcset="./assets/set-sm.png"
                         />
                         <img
@@ -92,7 +105,13 @@
             <div class="title">
                <h2>Clientes que confiam no nosso trabalho</h2>
             </div>
-            <img src="./assets/clients.png" alt="" srcset="" />
+            <picture>
+               <source
+                  media="(max-width: 649px) and (min-width: 320px)"
+                  srcset="./assets/clients_sm.png"
+               />
+               <img src="./assets/clients.png" alt="" />
+            </picture>
          </div>
       </section>
 
@@ -102,7 +121,7 @@
                <div class="content-producs-img">
                   <picture>
                      <source
-                        media="(max-width: 1039px) and (min-width:320px)"
+                        media="(max-width: 1023px) and (min-width: 320px)"
                         srcset="./assets/imagem_sistemas_sm.png"
                      />
                      <img src="./assets/imagem_sistemas.png" alt="" />
@@ -149,10 +168,10 @@
                <div class="content-producs-img">
                   <picture>
                      <source
-                        media="(max-width: 1039px) and (min-width:320px)"
-                        srcset=""
+                        media="(max-width: 1023px) and (min-width: 320px)"
+                        srcset="./assets/outsourcing_sm.png"
                      />
-                     <img src="./assets/outsourcing_sm.png" alt="" />
+                     <img src="./assets/outsourcing.png" alt="" />
                   </picture>
                </div>
             </div>
@@ -161,10 +180,10 @@
                <div class="content-producs-img">
                   <picture>
                      <source
-                        media="(max-width: 1039px) and (min-width:320px)"
-                        srcset=""
+                        media="(max-width: 1023px) and (min-width: 320px)"
+                        srcset="./assets/legado_aplicativos_sm.png"
                      />
-                     <img src="./assets/legado_aplicativos_sm.png" alt="" />
+                     <img src="./assets/legado_aplicativos.png" alt="" />
                   </picture>
                </div>
                <div class="content-producs-text">
@@ -202,10 +221,10 @@
                <div class="content-producs-img">
                   <picture>
                      <source
-                        media="(max-width: 1039px) and (min-width:320px)"
-                        srcset=""
+                        media="(max-width: 1023px) and (min-width: 320px)"
+                        srcset="./assets/hunting_sm.png"
                      />
-                     <img src="./assets/hunting_sm.png" alt="" />
+                     <img src="./assets/hunting.png" alt="" />
                   </picture>
                </div>
             </div>
